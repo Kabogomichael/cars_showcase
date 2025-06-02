@@ -1,7 +1,7 @@
 "use client"
 import { Hero } from "@/components";
 import CustomFilter from "@/components/CustomFilter";
-import SearchBar from "@/components/searchBar";
+import SearchBar from "@/components/SearchBar";
 import CarCard from "@/components/CarCard";
 import { fetchCars } from "@/utils";
 import Image from "next/image";

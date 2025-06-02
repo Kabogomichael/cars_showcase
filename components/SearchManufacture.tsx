@@ -24,8 +24,8 @@ function SearchManufacture({
       : manufacturers.filter((item) =>
           item
             .toLowerCase()
-            .replace(/\s+/g, " ")
-            .includes(query.toLowerCase().replace(/\s+/g, " "))
+            .replace(/\s+/g, `&quot`)
+            .includes(query.toLowerCase().replace(/\s+/g, `&quot`))
         );
   return (
     <div className="flex-1 max-sm:w-full flex justify-start items-center">

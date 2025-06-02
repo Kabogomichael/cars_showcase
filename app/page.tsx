@@ -4,7 +4,6 @@ import CustomFilter from "@/components/CustomFilter";
 import SearchBar from "@/components/SearchBar";
 import CarCard from "@/components/CarCard";
 import { fetchCars } from "@/utils";
-import Image from "next/image";
 import { fuels, yearsOfProduction } from "@/constants";
 import ShowMore from "@/components/ShowMore";
 import { useEffect, useState } from "react";
@@ -43,13 +42,10 @@ setLoading(false)
   }
 }
 useEffect(()=>{
-  console.log(fuel,year,limit,manufacturer,model);
-  
   getCars()
 
 },[fuel,year,limit,manufacturer,model])
 
-  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
     <main className="overflow-hidden">

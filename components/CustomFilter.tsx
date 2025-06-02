@@ -1,7 +1,6 @@
 "use client";
 import { useState, Fragment } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import {
   Listbox,
   Transition,
@@ -11,10 +10,9 @@ import {
 } from "@headlessui/react";
 import { CustomFilterProps } from "@/types";
 import chevronUpDown from "@/public/chevron-up-down.svg";
-import { updateSearchParams } from "@/utils";
 
-function CustomFilter({ title, options,setFilter }: CustomFilterProps) {
-  const router = useRouter();
+function CustomFilter({options,setFilter }: CustomFilterProps) {
+ 
   const [selected, setSelected] = useState(options[0]);
   // const handleUpdateParams = (e:{type: string, value: string}) => {
   //   const newPathName = updateSearchParams(title,e.value.toLowerCase());

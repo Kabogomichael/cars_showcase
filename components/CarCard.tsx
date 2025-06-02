@@ -16,7 +16,7 @@ interface carCardProps{
 
 function CarCard({car}:carCardProps) {
     const [isOpen,setIsOpen]=useState(false)
-    const {city_mpg,combination_mpg,cylinders,displacement,drive,fuel_type,highway_mpg, make,model,transmission,year} = car;
+    const {displacement,make,model,transmission,year} = car;
     const carRent = calculateCarRent(displacement,year)
   return (
     <div className='flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl group'>

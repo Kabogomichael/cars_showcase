@@ -5,7 +5,7 @@ import React from "react";
 import magnifying from "@/public/magnifying-glass.svg";
 // import model from "@/public/model-icon.png"
 import models from "@/public/model-icon.png";
-import { useRouter } from "next/navigation";
+
 import SearchManufacture from "./SearchManufacture";
 
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
@@ -23,7 +23,7 @@ const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
 function SearchBar({setManufacture,setModel}) {
   const [searchManufacture, setSearchManufacture] = useState("");
   const [searchModel, setSearchModel] = useState("");
-  const router = useRouter();
+
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (searchManufacture === " " && searchModel === " ") {

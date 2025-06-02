@@ -49,9 +49,7 @@ function CarCard({car}:carCardProps) {
                 </div>
                 <div className='flex flex-col justify-center items-center gap-2'>
                     <Image src={tire} width={20} height={20} alt='steering wheel' />
-                    <p className='text-[14px]'>
-                        {drive.toUpperCase()}
-                    </p>
+                    
                 </div>
                 <div className='flex flex-col justify-center items-center gap-2'>
                     <Image src={gas} width={20} height={20} alt='steering wheel' className='object-contain' />

@@ -24,8 +24,8 @@ function CarDetails({ isOpen, closeModal, car }: carDetailsProps) {
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <TransitionChild
             as={Fragment}
-            enter="ease-out duration-100 "
-            enterFrom="opacity-100"
+            enter="ease-out duration-300 "
+            enterFrom="opacity-10"
             enterTo="opacity-0"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
